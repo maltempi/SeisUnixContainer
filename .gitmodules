@@ -1,0 +1,3 @@
+[submodule "SeisUnix"]
+	path = SeisUnix
+	url = git@github.com:maltempi/SeisUnix.git
