@@ -31,7 +31,7 @@ docker run --rm -p 3393:3389 -v ${PWD}:/home/ubuntu/data maltempi/seisunix:lates
 
 ### Running container
 ```
-docker run --rm -p 3393:3389 -v ${PWD}:/home/ubuntu/data maltempi/seisunix:latest 
+docker run -it --rm -p 3393:3389 -v ${PWD}:/home/ubuntu/data maltempi/seisunix:latest 
 ```
 
 After running the above command, you can connect with your Remote Desktop client using the following credentials:
@@ -39,8 +39,12 @@ After running the above command, you can connect with your Remote Desktop client
 **Username**: `ubuntu`
 **password**: `ubuntu`
 
+> **IMPORTANT NOTE:** Please ensure that all important data is saved within the `/home/ubuntu/data` directory while you are working, as any data located outside this volume will be lost when the container is terminated or deleted.
+
 ### Understanding above command:
 Overall, this command creates a Docker container from the `maltempi/seisunix:latest` image, maps the RDP port, and mounts the current directory to enable data exchange between the host and the container. Let's break down the command and its components:
+
+- `-it`: Enables an interactive terminal session with the container. You can stop this container with `CTRL+C`.
 
 - `--rm`: This flag automatically removes the container when it exits, ensuring that it doesn't persist after it stops running.
 
