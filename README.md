@@ -2,8 +2,10 @@
 A container image (Docker) for portable SeisUnix with graphical interface access via Remote Desktop (RDP)
 
 ## Features
-    - SeisUnix: It is a powerful software package for seismic data processing and analysis. It offers a range of tools and utilities for seismic data manipulation, modeling, imaging, and more.
-    - Remote Destop (RDP) Access: The container image includes RDP access, allowing you to connect to the containerized environment using your preferred Remote Desktop client (Windows, Linux or Mac). This provides a convenient graphical interface for running SeisUnix and interacting with the seismic data.
+
+- SeisUnix: It is a powerful software package for seismic data processing and analysis. It offers a range of tools and utilities for seismic data manipulation, modeling, imaging, and more. See SeisUnix official repository: https://github.com/JohnWStockwellJr/SeisUnix
+
+- Remote Destop (RDP) Access: The container image includes RDP access, allowing you to connect to the containerized environment using your preferred Remote Desktop client (Windows, Linux or Mac). This provides a convenient graphical interface for running SeisUnix and interacting with the seismic data.
 
 ## Container Image Repository
 https://hub.docker.com/r/maltempi/seisunix
@@ -56,3 +58,13 @@ cd SeisUnixDocker
 git submodule update --depth 1
 docker build . -t maltempi/seisunix
 ```
+
+## Contributions
+
+Contributions to the repository are welcome! If you have ideas for improvements, bug fixes, or additional features, feel free to open an issue or submit a pull request.
+
+## License
+
+The code and scripts in this repository are licensed under the MIT License. You are free to use, modify, and distribute the code as per the terms of the license.
+
+**SeisUnix License:** https://github.com/JohnWStockwellJr/SeisUnix/blob/master/LICENSE
