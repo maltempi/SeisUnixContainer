@@ -1,6 +1,8 @@
 # SeisUnixDocker
 A container image (Docker) for portable SeisUnix with graphical interface access via Remote Desktop (RDP)
 
+![SeisUnixDemo](./docs/SeisUnixDockerDemo.gif)
+
 ## Features
 
 - SeisUnix: It is a powerful software package for seismic data processing and analysis. It offers a range of tools and utilities for seismic data manipulation, modeling, imaging, and more. See SeisUnix official repository: https://github.com/JohnWStockwellJr/SeisUnix
